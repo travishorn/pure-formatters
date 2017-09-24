@@ -1,0 +1,16 @@
+{
+  "name": "pure-formatters",
+  "version": "1.0.0",
+  "description": "A collection of pure JS functions that return formatted data. Useful in any view engine.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run build && mocha ./test",
+    "build": "webpack"
+  },
+  "author": "Travis Horn (https://travishorn.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^3.5.3",
+    "webpack": "^3.6.0"
+  }
+}
