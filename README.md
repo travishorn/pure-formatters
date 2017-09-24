@@ -8,6 +8,14 @@
 
 ## Usage
 
+### Browser
+
+    <script src="pure-formatters.js"></script>
+
+    <script>
+      console.log(pf.upperCase('hello world'));
+    </script>
+
 ### Node.js
 
     const pf = require('pure-formatters');
