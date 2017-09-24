@@ -82,4 +82,4 @@
 
 ## Contributing
 
-See [CONTRIBUTING.md](https://github.com/travishorn/pure-formatters/CONTRIBUTING.md)
+See [CONTRIBUTING.md](https://github.com/travishorn/pure-formatters/blob/master/CONTRIBUTING.md)
