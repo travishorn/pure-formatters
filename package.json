@@ -9,6 +9,10 @@
   },
   "author": "Travis Horn (https://travishorn.com)",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/travishorn/pure-formatters"
+  },
   "devDependencies": {
     "mocha": "^3.5.3",
     "webpack": "^3.6.0"
