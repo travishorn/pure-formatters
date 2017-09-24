@@ -1,4 +1,5 @@
 const path = require('path');
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 const NON_REL_IMPORTS = /^\w.*$/i;
 
@@ -19,5 +20,17 @@ module.exports = [{
     filename: 'pure-formatters.js',
     library: 'pf',
   },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader',
+      },
+    ],
+  },
+  plugins: [
+    new UglifyJSPlugin(),
+  ],
   externals: [NON_REL_IMPORTS],
 }];
