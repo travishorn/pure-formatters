@@ -35,4 +35,35 @@ describe('pureFormatters', () => {
       assert.equal(pf.usd(1.49623456789), '$1.50');
     });
   });
+
+  describe('#sentenceList', () => {
+    it('should return a string on a single array element', () => {
+      assert.equal(pf.sentenceList(['Bettye Norton']), 'Bettye Norton');
+    });
+
+    it('should return a string combining two array elements with "and"', () => {
+      assert.equal(
+        pf.sentenceList(['Bettye Norton', 'Melisa Reed']),
+        'Bettye Norton and Melisa Reed'
+      );
+    });
+
+    it('should return a string combining three+ array elements with commas and "and"', () => {
+      assert.equal(
+        pf.sentenceList(['Bettye Norton', 'Melisa Reed', 'Kari Osborne']),
+        'Bettye Norton, Melisa Reed, and Kari Osborne'
+      );
+    });
+
+    it('should return a string combining array of objects on a key', () => {
+      assert.equal(
+        pf.sentenceList([
+          { name: 'Bettye Norton' },
+          { name: 'Melisa Reed' },
+          { name: 'Kari Osborne' },
+        ], 'name'),
+        'Bettye Norton, Melisa Reed, and Kari Osborne'
+      );
+    });
+  });
 });
