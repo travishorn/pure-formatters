@@ -61,7 +61,7 @@
 | sentenceList | Combines array elements with commas and "and"     | ['Bettye Norton']                                | 'Bettye Norton'                                |
 |              |                                                   | ['Bettye Norton', 'Melisa Reed']                 | 'Bettye Norton and Melisa Reed'                |
 |              |                                                   | ['Bettye Norton', 'Melisa Reed', 'Kari Osborne'] | 'Bettye Norton, Melisa Reed, and Kari Osborne' |
-|              |                                                   | [{ name: 'Bettye Norton' }]                      | 'Bettye Norton'                                |
+|              |                                                   | [{ name: 'Bettye Norton' }], 'name'              | 'Bettye Norton'                                |
 | upperCase    | Converts string to all upper case characters      | 'hello world'                                    | 'HELLO WORLD'                                  |
 | usd          | Adds a dollar sign and rounds to 2 decimal places | 1.5                                              | '$1.50'                                        |
 |              |                                                   | 150, 'c'                                         | '$1.50'                                        |
