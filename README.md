@@ -4,17 +4,23 @@
 
 ## Installation
 
+### Node.js
+
     > npm install --save pure-formatters
+
+### Browser
+
+    <script src="node_modules/pure-formatters/dist/pure-formatters.js"></script>
+
+    <!-- Or CDN -->
+    <script src="https://unpkg.com/pure-formatters/dist/pure-formatters.js"></script>
 
 ## Usage
 
 ### Browser
 
-    <script src="pure-formatters.js"></script>
-
-    <script>
-      console.log(pf.upperCase('hello world'));
-    </script>
+    // After adding script tag, the global variable pf is available
+    console.log(pf.upperCase('hello world'));
 
 ### Node.js
 
