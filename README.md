@@ -79,3 +79,7 @@
 | upperCase    | Converts string to all upper case characters      | 'hello world'                                    | 'HELLO WORLD'                                  |
 | usd          | Adds a dollar sign and rounds to 2 decimal places | 1.5                                              | '$1.50'                                        |
 |              |                                                   | 150, 'c'                                         | '$1.50'                                        |
+
+## Contributing
+
+See [CONTRIBUTING.md](https://github.com/travishorn/pure-formatters/CONTRIBUTING.md)
