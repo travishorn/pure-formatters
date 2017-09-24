@@ -1,6 +1,6 @@
 {
   "name": "pure-formatters",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A collection of pure JS functions that return formatted data. Useful in any view engine.",
   "main": "index.js",
   "scripts": {
