@@ -1,5 +1,7 @@
 # Pure Formatters
 
+[![Build Status](https://travis-ci.org/travishorn/pure-formatters.svg?branch=master)](https://travis-ci.org/travishorn/pure-formatters)
+
 > A collection of pure JS functions that return formatted data. Useful in any view engine.
 
 ## Installation
