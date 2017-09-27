@@ -73,6 +73,9 @@
 
 | Symbol       | Description                                       | Input                                            | Output                                         |
 |--------------|---------------------------------------------------|--------------------------------------------------|------------------------------------------------|
+| displayNull  | If input is null or '', return 'null'             | ''                                               | 'null'                                         |
+|              |                                                   | 'Hello World'                                    | 'Hello World'                                  |
+|              |                                                   | '', 'empty'                                      | 'empty'                                        |
 | lowerCase    | Converts string to all lower case characters      | 'Hello World'                                    | 'hello world'                                  |
 | sentenceList | Combines array elements with commas and "and"     | ['Bettye Norton']                                | 'Bettye Norton'                                |
 |              |                                                   | ['Bettye Norton', 'Melisa Reed']                 | 'Bettye Norton and Melisa Reed'                |

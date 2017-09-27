@@ -2,6 +2,37 @@ const assert = require('assert');
 const pf = require('../');
 
 describe('pureFormatters', () => {
+  describe('#displayNull()', () => {
+    it('should return \'null\' on an empty value', () => {
+      assert.equal(pf.displayNull(''), 'null');
+    });
+
+    it('should return \'null\' on a null value', () => {
+      assert.equal(pf.displayNull(null), 'null');
+    });
+
+    it('should return the value on a boolean', () => {
+      assert.equal(pf.displayNull(true), true);
+      assert.equal(pf.displayNull(false), false);
+    });
+
+    it('should return the value on a number', () => {
+      assert.equal(pf.displayNull(150), 150);
+    });
+
+    it('should return the value on a string', () => {
+      assert.equal(pf.displayNull('Hello World'), 'Hello World');
+    });
+
+    it('should return undefined on an undefined value', () => {
+      assert.equal(pf.displayNull(undefined), undefined);
+    });
+
+    it('should return a custom string defined by second argument', () => {
+      assert.equal(pf.displayNull('', 'empty'), 'empty');
+    });
+  });
+
   describe('#lowerCase()', () => {
     it('should return a string with all lower case characters', () => {
       assert.equal(pf.lowerCase('Hello World'), 'hello world');
