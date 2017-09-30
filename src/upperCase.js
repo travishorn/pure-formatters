@@ -1,1 +1,3 @@
-export default str => str.toUpperCase();
+import { upperCase } from 'lodash';
+
+export default str => upperCase(str);

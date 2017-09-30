@@ -71,19 +71,52 @@
 
 ## Formatters
 
-| Symbol       | Description                                       | Input                                            | Output                                         |
-|--------------|---------------------------------------------------|--------------------------------------------------|------------------------------------------------|
-| displayNull  | If input is null or '', return 'null'             | ''                                               | 'null'                                         |
-|              |                                                   | 'Hello World'                                    | 'Hello World'                                  |
-|              |                                                   | '', 'empty'                                      | 'empty'                                        |
-| lowerCase    | Converts string to all lower case characters      | 'Hello World'                                    | 'hello world'                                  |
-| sentenceList | Combines array elements with commas and "and"     | ['Bettye Norton']                                | 'Bettye Norton'                                |
-|              |                                                   | ['Bettye Norton', 'Melisa Reed']                 | 'Bettye Norton and Melisa Reed'                |
-|              |                                                   | ['Bettye Norton', 'Melisa Reed', 'Kari Osborne'] | 'Bettye Norton, Melisa Reed, and Kari Osborne' |
-|              |                                                   | [{ name: 'Bettye Norton' }], 'name'              | 'Bettye Norton'                                |
-| upperCase    | Converts string to all upper case characters      | 'hello world'                                    | 'HELLO WORLD'                                  |
-| usd          | Adds a dollar sign and rounds to 2 decimal places | 1.5                                              | '$1.50'                                        |
-|              |                                                   | 150, 'c'                                         | '$1.50'                                        |
+| Symbol       | Description                                                                                                                                      | Input                                            | Output                                         |
+|--------------|--------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|------------------------------------------------|
+| camelCase    | Converts string to camel case.                                                                                                                   | 'Foo Bar'                                        | 'fooBar'                                       |
+|              |                                                                                                                                                  | '--foo-bar--'                                    | 'fooBar'                                       |
+|              |                                                                                                                                                  | '__FOO_BAR__'                                    | 'fooBar'                                       |
+| capitalize   | Converts the first character of string to upper case and the remaining to lower case                                                             | 'FRED'                                           | 'Fred'                                         |
+| deburr       | Deburrs string by converting Latin-1 Supplement and Latin Extended-A letters to basic Latin letters and removing combining diacritical marks.    | 'déjà vu'                                        | 'deja vu'                                      |
+| displayNull  | If input is null or '', return 'null'                                                                                                            | ''                                               | 'null'                                         |
+|              |                                                                                                                                                  | 'Hello World'                                    | 'Hello World'                                  |
+|              |                                                                                                                                                  | '', 'empty'                                      | 'empty'                                        |
+| escape       | Converts the characters "&", "<", ">", '"', and "'" in string to their corresponding HTML entities.                                              | 'fred, barney, & pebbles'                        | 'fred, barney, &amp; pebbles'                  |
+| escapeRegExp | Escapes the RegExp special characters "^", "$", "", ".", "*", "+", "?", "(", ")", "[", "]", "{", "}", and "\|" in string.                        | '[lodash](https://lodash.com/)'                  | '\\[lodash\\]\\(https://lodash\\.com/\\)'      |
+| kebabCase    | Converts string to kebab case.                                                                                                                   | 'Foo Bar'                                        | 'foo-bar'                                      |
+|              |                                                                                                                                                  | 'fooBar'                                         | 'foo-bar'                                      |
+|              |                                                                                                                                                  | '__FOO_BAR__'                                    | 'foo-bar'                                      |
+| lowerCase    | Converts string, as space separated words, to lower case.                                                                                        | '--Foo-Bar--'                                    | 'foo bar'                                      |
+|              |                                                                                                                                                  | 'fooBar'                                         | 'foo bar'                                      |
+|              |                                                                                                                                                  | '__FOO_BAR__'                                    | 'foo bar'                                      |
+| lowerFirst   | Converts the first character of string to lower case.                                                                                            | 'Fred'                                           | 'fred'                                         |
+|              |                                                                                                                                                  | 'FRED'                                           | 'fRED'                                         |
+| pad          | Pads string on the left and right sides if it's shorter than length. Padding characters are truncated if they can't be evenly divided by length. | 'abc', 8                                         | '  abc   '                                     |
+|              |                                                                                                                                                  | 'abc', 8, '_-'                                   | '_-abc_-_'                                     |
+|              |                                                                                                                                                  | 'abc', 3                                         | 'abc'                                          |
+| sentenceList | Combines array elements with commas and "and"                                                                                                    | ['Bettye Norton']                                | 'Bettye Norton'                                |
+|              |                                                                                                                                                  | ['Bettye Norton', 'Melisa Reed']                 | 'Bettye Norton and Melisa Reed'                |
+|              |                                                                                                                                                  | ['Bettye Norton', 'Melisa Reed', 'Kari Osborne'] | 'Bettye Norton, Melisa Reed, and Kari Osborne' |
+|              |                                                                                                                                                  | [{ name: 'Bettye Norton' }], 'name'              | 'Bettye Norton'                                |
+| upperCase    | Converts string, as space separated words, to upper case.                                                                                        | '--foo-bar'                                      | 'FOO BAR'                                      |
+|              |                                                                                                                                                  | 'fooBar'                                         | 'FOO BAR'                                      |
+|              |                                                                                                                                                  | '__foo_bar__'                                    | 'FOO BAR'                                      |
+| usd          | Adds a dollar sign and rounds to 2 decimal places                                                                                                | 1.5                                              | '$1.50'                                        |
+|              |                                                                                                                                                  | 150, 'c'                                         | '$1.50'                                        |
+| padEnd | Description, input, and output coming soon. | | |
+| padStart | Description, input, and output coming soon. | | |
+| repeat | Description, input, and output coming soon. | | |
+| replace | Description, input, and output coming soon. | | |
+| snakeCase | Description, input, and output coming soon. | | |
+| startCase | Description, input, and output coming soon. | | |
+| toLower | Description, input, and output coming soon. | | |
+| toUpper | Description, input, and output coming soon. | | |
+| trim | Description, input, and output coming soon. | | |
+| trimEnd | Description, input, and output coming soon. | | |
+| trimStart | Description, input, and output coming soon. | | |
+| truncate | Description, input, and output coming soon. | | |
+| unescape | Description, input, and output coming soon. | | |
+| upperFirst | Description, input, and output coming soon. | | |
 
 ## Contributing
 
