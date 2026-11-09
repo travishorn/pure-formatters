@@ -1,3 +1,3 @@
-import { capitalize } from 'lodash';
-
-export default str => capitalize(str);
+export function capitalize(str) {
+  return str ? str.charAt(0).toUpperCase() + str.slice(1).toLowerCase() : "";
+}

@@ -1,3 +1,3 @@
-import { upperFirst } from 'lodash';
+import { upperFirst } from "lodash-es";
 
-export default str => upperFirst(str);
+export default (str) => upperFirst(str);

@@ -1,3 +1,3 @@
-import { lowerFirst } from 'lodash';
+import { lowerFirst } from "lodash-es";
 
-export default str => lowerFirst(str);
+export default (str) => lowerFirst(str);

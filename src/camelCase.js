@@ -1,3 +1,1 @@
-import { camelCase } from 'lodash';
-
-export default str => camelCase(str);
+export { camelCase } from "lodash-es";

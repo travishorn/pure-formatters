@@ -1,3 +1,3 @@
-import { startCase } from 'lodash';
+import { startCase } from "lodash-es";
 
-export default str => startCase(str);
+export default (str) => startCase(str);
