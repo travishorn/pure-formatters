@@ -28,18 +28,8 @@ sentenceList(list);
 // Bettye Norton, Melissa Reed, and Kari Osborne.
 ```
 
-## Formatters
-
-| Symbol       | Description                                       | Input                                            | Output                                         |
-| ------------ | ------------------------------------------------- | ------------------------------------------------ | ---------------------------------------------- |
-| displayNull  | If input is null or '', return 'null'             | ''                                               | 'null'                                         |
-|              |                                                   | 'Hello World'                                    | 'Hello World'                                  |
-|              |                                                   | '', 'empty'                                      | 'empty'                                        |
-| sentenceList | Combines array elements with commas and "and"     | ['Bettye Norton']                                | 'Bettye Norton'                                |
-|              |                                                   | ['Bettye Norton', 'Melisa Reed']                 | 'Bettye Norton and Melisa Reed'                |
-|              |                                                   | ['Bettye Norton', 'Melisa Reed', 'Kari Osborne'] | 'Bettye Norton, Melisa Reed, and Kari Osborne' |
-|              |                                                   | [{ name: 'Bettye Norton' }], 'name'              | 'Bettye Norton'                                |
-| usd          | Adds a dollar sign and rounds to 2 decimal places | 1.5                                              | '$1.50'                                        |
+For full API documentation, visit
+[https://travishorn.github.io/pure-formatters](https://travishorn.github.io/pure-formatters).
 
 ## Contributing
 
