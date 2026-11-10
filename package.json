@@ -2,23 +2,47 @@
   "name": "pure-formatters",
   "version": "2.0.4",
   "description": "A collection of pure JS functions that return formatted data. Useful in any view engine.",
-  "exports": "./src/index.js",
-  "scripts": {
-    "docs": "typedoc --entryPoints src/index.js --out docs",
-    "test": "vitest run"
-  },
-  "author": "Travis Horn (https://travishorn.com)",
-  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/travishorn/pure-formatters"
   },
+  "bugs": {
+    "url": "https://github.com/travishorn/pure-formatters/issues"
+  },
+  "homepage": "https://github.com/travishorn/pure-formatters#readme",
+  "exports": "./src/index.js",
   "files": [
-    "./src/"
+    "src"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "docs": "typedoc --entryPoints src/index.js --out docs",
+    "format": "prettier --write .",
+    "lint:format": "prettier --check .",
+    "lint:types": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "format",
+    "formatter",
+    "formatting",
+    "pure"
+  ],
+  "author": "Travis Horn <travis@travishorn.com> (https://travishorn.com/)",
+  "license": "MIT",
+  "type": "module",
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "@vitest/coverage-v8": "^5.1.0",
+    "eslint": "^10.14.0",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^17.14.0",
+    "prettier": "^3.9.10",
     "typedoc": "^0.28.20",
+    "typescript": "^7.0.2",
     "vitest": "^5.1.0"
   }
 }
