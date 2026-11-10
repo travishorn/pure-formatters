@@ -1,3 +1,1 @@
-import { kebabCase } from "lodash-es";
-
-export default (str) => kebabCase(str);
+export { kebabCase } from "lodash-es";

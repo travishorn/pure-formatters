@@ -1,5 +1,5 @@
-export default (inputArray, key) => {
-  let output = '';
+export function sentenceList(inputArray, key) {
+  let output = "";
 
   if (inputArray.length === 1) {
     if (!key) {
@@ -16,7 +16,7 @@ export default (inputArray, key) => {
   } else {
     inputArray.forEach((item, i) => {
       if (i === inputArray.length - 1) {
-        output += 'and ';
+        output += "and ";
       }
 
       if (!key) {
@@ -26,10 +26,10 @@ export default (inputArray, key) => {
       }
 
       if (inputArray.length !== 2 && i < inputArray.length - 1) {
-        output += ', ';
+        output += ", ";
       }
     });
   }
 
   return output;
-};
+}

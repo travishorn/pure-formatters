@@ -1,3 +1,1 @@
-import { escapeRegExp } from "lodash-es";
-
-export default (str) => escapeRegExp(str);
+export { escapeRegExp } from "lodash-es";

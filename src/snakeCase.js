@@ -1,3 +1,1 @@
-import { snakeCase } from "lodash-es";
-
-export default (str) => snakeCase(str);
+export { snakeCase } from "lodash-es";

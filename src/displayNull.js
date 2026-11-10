@@ -1,5 +1,5 @@
-export default (input, display) => {
-  if (input === null) return display || 'null';
-  if (input === '') return display || 'null';
+export function displayNull(input, display = "null") {
+  if (input === null) return display;
+  if (input === "") return display;
   return input;
-};
+}

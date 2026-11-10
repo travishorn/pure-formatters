@@ -1,9 +1,9 @@
-export default (amount, denomination) => {
+export function usd(amount, denomination) {
   let nAmount = parseFloat(amount);
 
-  if (denomination === 'c') {
+  if (denomination === "c") {
     nAmount /= 100;
   }
 
   return `$${nAmount.toFixed(2)}`;
-};
+}
