@@ -3,29 +3,28 @@
 A collection of pure JS functions that return formatted data. Useful in any view
 engine.
 
-## Installation
-
-### Node.js
+## Using a Package Manager
 
 ```bash
 npm install pure-formatters
 ```
 
-### Browser
-
-```html
-<script type="module" src="https://unpkg.com/pure-formatters/index.js"></script>
-```
-
-## Usage
-
 ```javascript
 import { sentenceList } from "pure-formatters";
 
-const list = ["Bettye Norton", "Melissa Reed", "Kari Osborne"];
-
-sentenceList(list);
+console.log(sentenceList(["Bettye Norton", "Melissa Reed", "Kari Osborne"]));
 // Bettye Norton, Melissa Reed, and Kari Osborne.
+```
+
+## In the Browser
+
+```html
+<script type="module">
+  import { sentenceList } from "https://esm.run/pure-formatters@3";
+
+  console.log(sentenceList(["Bettye Norton", "Melissa Reed", "Kari Osborne"]));
+  // Bettye Norton, Melissa Reed, and Kari Osborne.
+</script>
 ```
 
 For full API documentation, visit
